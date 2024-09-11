@@ -1,0 +1,26 @@
+{
+  "name": "cadaluan",
+  "version": "1.0.0",
+  "description": "Proyecto formativo de desarrollo de sitio web, en el que se ofrecen servicios de mantenimiento y reparación a domicilio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cadaluan/cadaluan.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "EJS"
+  ],
+  "author": "Daniel Álvarez Molina - Juan Camilo Salazar Reina - Luis Fernando Ochoa Vásquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cadaluan/cadaluan/issues"
+  },
+  "homepage": "https://github.com/cadaluan/cadaluan#readme"
+}
