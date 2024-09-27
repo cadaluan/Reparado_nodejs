@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <%- include('../partials/head'); %>
+    <title>Detalles del Producto</title>
+  </head>
+
+  <body class="container">
+    <header><%- include('../partials/header'); %></header>
+
+    <main>
+      <h1>Detalles del Usuario</h1>
+      <table id="datatable" class="table table-striped">
+        <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Opciones</th>
+        </tr>
+        <tr>
+          <td><%= producto.nombre %></td>
+          <td><%= producto.precio %></td>
+          <td>
+            <a href="/productos/<%= producto._id %>/editar">Editar</a>
+            <a href="/productos">Volver a la lista</a>
+          </td>
+        </tr>
+      </table>
+    </main>
+
+    <footer><%- include('../partials/footer'); %></footer>
+  </body>
+</html>

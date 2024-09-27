@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <%- include('../partials/head'); %>
+        <title>Editar Producto</title>
+</head>
+
+<body class="container">
+    <header><%- include('../partials/header'); %></header>
+
+    <main>
+        <h1>Editar Producto</h1>
+        <form action="/productos/<%= producto._id %>/editar" method="POST">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" value="<%= producto.nombre %>" required />
+            </div>
+            <div>
+                <label for="descripcion">Descripción:</label>
+                <input type="text" id="descripcion" name="descripcion" value="<%= producto.descripcion %>" required />
+            </div>
+            <div>
+                <label for="precio">Precio:</label>
+                <input type="text" id="precio" name="precio" value="<%= producto.precio %>" required />
+            </div>
+            <button type="submit">Actualizar</button>
+        </form>
+        <a href="/productos/<%= producto._id %>">Volver a los detalles</a>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+    
+</body>
+
+</html>
